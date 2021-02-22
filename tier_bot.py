@@ -395,10 +395,10 @@ async def 청소(ctx):
     #await ctx.send("지랄 ㅋㅋ")
     #return
     print(ctx.message.content)
-    print(ctx.message.content.split()[2])
+    print(ctx.message.content.split()[1])
     try:
-        print(ctx.message.content.split()[2])
-        msg = float(ctx.message.content.split()[2])
+        print(ctx.message.content.split()[1])
+        msg = float(ctx.message.content.split()[1])
         print(msg)
         times = int(msg)
         print(times)
