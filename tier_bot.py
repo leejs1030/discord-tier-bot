@@ -190,7 +190,7 @@ def searchsoloRank(summonerName):
 
 
     try:
-        printingmsg += findata['miniSeries']['progress'].replace("W", "승 ").replace("L", "패 ").replace("N", "_ ") + "\n"
+        printingmsg += findata['miniSeries']['progress'].replace("W", "승 ").replace("L", "패 ").replace("N", "? ") + "\n"
     except:
         pass
     return printingmsg
