@@ -17,8 +17,8 @@ import os
 
 bot_command = '`'
 token = os.environ['token']
-thatId = "282534461101572097"
-myId = "490745605069602816"
+thatId = os.environ['thatId']
+myId = os.environ['myId']
 DEVELOPMENTAPIKEY = os.environ['riotapi']
 riotHeaders = {
     "Origin": "https://developer.riotgames.com",
@@ -27,14 +27,6 @@ riotHeaders = {
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
 }
-
-
-
-"""
-라이엇 API키
-RGAPI-1d8d0bcb-19e3-4ee0-8579-bdc41b002ec1
-
-"""
 
 
 
