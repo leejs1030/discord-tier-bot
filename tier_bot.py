@@ -15,10 +15,10 @@ from urllib import parse
 
 
 bot_command = '`'
-token = "NzM3NzE5ODE3NzQ5OTIxODcz.XyBdHg.ODBj5JvRgp1PSQNR5mQU9bHhyjo"
+token = "TOKEN"
 thatId = "282534461101572097"
 myId = "490745605069602816"
-DEVELOPMENTAPIKEY = "RGAPI-8294d762-8eab-4798-999c-2a448343ad59"
+DEVELOPMENTAPIKEY = "RIOTAPIKEY"
 riotHeaders = {
     "Origin": "https://developer.riotgames.com",
     "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
