@@ -185,9 +185,15 @@ def searchsoloRank(summonerName):
     try:
         findata = getTier(result.json())
         printingmsg = (summonerName + "의 현재 솔로랭크 티어 : " + findata["tier"] + " " + findata["rank"] + "  " + str(findata["leaguePoints"]) + "LP\n")
-        return printingmsg
     except:
         return "배치를 완료하지 않는 등의 이유로 인해 현재 랭크를 불러올 수 없습니다.\n"
+
+
+    try:
+        printingmsg += findata['miniSeries']['progress'].replace("W", "승 ").replace("L", "패 ").replace("N", "_ ") + "\n"
+    except:
+        pass
+    return printingmsg
 
 def searchMatchList(summonerName, gameNum = 10):
     encodingSummonerName = parse.quote(summonerName)
