@@ -504,4 +504,4 @@ async def 재생(ctx):
 #해야할 것 : 음악 실행하기 구현
 
 
-bot.run()
+bot.run(token)
