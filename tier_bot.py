@@ -206,6 +206,8 @@ def searchMatchList(summonerName, gameNum = 10):
     printingmsg = ""
     currentTime = int(time.time() * 1000)
     while(count < gameNum):
+        if (n > 30):
+            break
         try:
             if(matchdata['matches'][n]['queue'] == 420):
                 count += 1
