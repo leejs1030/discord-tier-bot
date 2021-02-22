@@ -88,20 +88,20 @@ hug       : 껴안는 사진
 
 
 
-@bot.command(pass_context=True)
-async def on(ctx):
-    if(str(ctx.author.id) != myId):
-        await ctx.send("안켜질거야")
-        return 0
-    print("켜진다")
-    try:
-        await ctx.channel.purge(limit = 1)
-    except:
-        await ctx.send("메시지 삭제 권한이 없습니다.")
-    x = input()
-    while(x != "끝"):
-        await ctx.send(x)
-        x = input()
+# @bot.command(pass_context=True)
+# async def on(ctx):
+#     if(str(ctx.author.id) != myId):
+#         await ctx.send("안켜질거야")
+#         return 0
+#     print("켜진다")
+#     try:
+#         await ctx.channel.purge(limit = 1)
+#     except:
+#         await ctx.send("메시지 삭제 권한이 없습니다.")
+#     x = input()
+#     while(x != "끝"):
+#         await ctx.send(x)
+#         x = input()
     
 
 
