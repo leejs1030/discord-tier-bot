@@ -209,6 +209,9 @@ def searchMatchList(summonerName, gameNum = 10):
         try:
             if(matchdata['matches'][n]['queue'] == 420):
                 count += 1
+            else:
+                n += 1
+                continue
         except IndexError:
             break
         nowMatch = matchdata['matches'][n]
@@ -271,7 +274,7 @@ async def 랭크(ctx):
 async def 전적(ctx):
     summonerName = ctx.message.content[len(bot_command) + 3:]
     printingmsg = searchMatchList(summonerName)
-    await ctx.send("최근 10게임의 솔로랭크 전적을 보여줍니다")
+    await ctx.send("최근 솔로랭크 전적을 보여줍니다")
     await ctx.send(printingmsg)
     print(ctx.message.content)
     return 0
