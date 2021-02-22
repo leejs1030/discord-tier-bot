@@ -1,4 +1,4 @@
+requests
 discord.py
 asyncio
-requests
 beautifulsoup4
