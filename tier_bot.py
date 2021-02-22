@@ -12,13 +12,14 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 from discord.voice_client import VoiceClient
 from urllib import parse
+import os
 
 
 bot_command = '`'
-token = "TOKEN"
+token = os.environ['token']
 thatId = "282534461101572097"
 myId = "490745605069602816"
-DEVELOPMENTAPIKEY = "RIOTAPIKEY"
+DEVELOPMENTAPIKEY = os.environ['riotapi']
 riotHeaders = {
     "Origin": "https://developer.riotgames.com",
     "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
@@ -503,4 +504,4 @@ async def 재생(ctx):
 #해야할 것 : 음악 실행하기 구현
 
 
-bot.run(token)
+bot.run()
