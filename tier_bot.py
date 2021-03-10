@@ -329,7 +329,7 @@ async def 엄준식(ctx):
 
 @bot.command(pass_context=True)
 async def 게임(ctx):
-   gamename=ctx.message.content[6:]
+   gamename=ctx.message.content[len(bot_command) + 1:]
    await ctx.send(gamename)
    await bot.change_presence(activity=discord.Game(name=gamename))
 
